@@ -1,0 +1,233 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Css for logo */
+        
+        .logo {
+            margin: 7px;
+        }
+        
+        .logo img {
+            height: 80px;
+            margin: 1px 10px;
+        }
+        /* Css for navbar */
+        #navbar{
+            display: flex;
+            align-items: center;
+            position:sticky;
+            top: 0px;
+            left: 0px;
+            
+        }
+        
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            display: flex;
+            list-style: none;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        #navbar ul li a {
+            font-weight: bold;
+            font-size: 1.8 rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            color: white;
+            display: block;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        
+        #navbar ul li a:hover {
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+        /* home section */
+        
+        #home {
+            display: flex;
+            flex-direction:column;
+            height: 593px;
+            padding: 5px 300px;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background:url('./img/bgfood.jpg') no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        #services{
+            margin: 20px;
+            display: flex;
+            
+        }
+        #services .box{
+            border: 2px solid brown;
+            margin: 3px 30px;
+            padding: 18px;
+            border-radius: 30px;
+            background-color: rgb(250, 246, 228);
+            cursor: pointer;
+        }
+        #services .box img{
+            height: 170px;
+            margin: auto;
+            display: block;
+        }
+        /* Branch Section  */
+        #branch-section{
+            height: 450px;
+            margin-top: 50px;
+            
+
+        }
+        #branch-section::before{
+            content: "";
+            position: absolute;
+            background: url(/img/Foodbg.jpg);
+            width: 100%;
+            height: 60%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        #branches{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       
+        .branch{
+            margin: 30px;
+            margin-top: 30px;
+            padding: 35px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: 1.2rem;
+            color: rgb(251, 251, 255);
+            text-shadow: rgb(8, 8, 8);
+            cursor: pointer;
+        }
+        .branch img{
+            height: 150px;
+            border-radius: 10px;
+
+        }
+        /* contact section  */
+        #contact{  
+            position: relative;
+            margin-top: 50px;          
+
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(/img/contact.jpeg) no-repeat center center/cover;
+        }
+        footer{
+            background: black;
+            color: white;
+            padding: 5px 15px;
+
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            padding-bottom: 55px;
+            
+        }
+        #contact-box form{
+            width: 40%;
+        }
+        #contact-box label{
+            font-size: 1.3rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            
+        }
+        #contact-box input{
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        /* utility class */
+        .h-primary{
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: 3.8rem;
+            color: rgb(253, 252, 252);
+            padding: 12px;
+        }
+        
+        .h-secondary{
+            text-align: center;
+
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: 3.8rem;
+            color: rgb(14, 13, 13);
+            padding: 12px;
+        }
+        .box h2{
+
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: 1.7rem;
+            color: rgb(6, 129, 245);
+            padding: 12px;
+        }
+        #home p{
+            color: rgb(255, 251, 251);
+            font-size: 1.2rem;
+        }
+        .btn{
+            
+            width: 100px;
+            height: 40px;
+            padding: 5px 10px;
+            border: 2px solid rgb(245, 217, 217);
+            border-radius: 8px;
+           background-color: brown;
+           color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            font-weight: bold;
+            margin: auto;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(200, 0, 184);
+        }
+        .centre{
+            text-align: center;
+        }
